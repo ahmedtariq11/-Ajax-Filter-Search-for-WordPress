@@ -26,3 +26,27 @@ $.ajax({
             }
         } 
     });
+if(mafsForm.find("#search").val().length !== 0) {
+    var search = mafsForm.find("#search").val();
+}
+if(mafsForm.find("#year").val().length !== 0) {
+    var year = mafsForm.find("#year").val();
+}
+if(mafsForm.find("#rating").val().length !== 0) {
+    var rating = mafsForm.find("#rating").val();
+}
+if(mafsForm.find("#language").val().length !== 0) {
+    var language = mafsForm.find("#language").val();
+}
+if(mafsForm.find("#genre").val().length !== 0) {
+    var genre = mafsForm.find("#genre").val();
+}
+ 
+var data = {
+    action : "my_ajax_filter_search",
+    search : search,
+    year : year,
+    rating : rating,
+    language : language,
+    genre : genre
+}
